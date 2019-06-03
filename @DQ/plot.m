@@ -142,23 +142,23 @@ switch primitive_type
             hold on;
         end
         
-        handle.handle_text{1} = text(dq_t(1) + x(1), dq_t(2) + x(2),...
-            dq_t(3) + x(3), 'x');
-        set(handle.handle_text{1} , 'Color', 'k');
+%         handle.handle_text{1} = text(dq_t(1) + x(1), dq_t(2) + x(2),...
+%             dq_t(3) + x(3), 'x');
+%         set(handle.handle_text{1} , 'Color', 'k');
         
         % Plot the y-axis
         handle.handle_axis{2} = plot3([0;y(1)] + dq_t(1), [0;y(2)] + dq_t(2),...
             [0; y(3)] + dq_t(3), 'g','Linewidth',1);
-        handle.handle_text{2} = text(y(1) + dq_t(1), y(2) + dq_t(2),...
-            y(3) + dq_t(3), 'y');
-        set(handle.handle_text{2}, 'Color', 'k');
+%         handle.handle_text{2} = text(y(1) + dq_t(1), y(2) + dq_t(2),...
+%             y(3) + dq_t(3), 'y');
+%         set(handle.handle_text{2}, 'Color', 'k');
         
         % Plot the z-axis
         handle.handle_axis{3} = plot3([0;z(1)] + dq_t(1), [0;z(2)] + dq_t(2),...
             [0,z(3)] + dq_t(3), 'b','Linewidth',1);
-        handle.handle_text{3}  = text(z(1) + dq_t(1), z(2) + dq_t(2),...
-            z(3) + dq_t(3), 'z');
-        set(handle.handle_text{3}, 'Color', 'k');
+%         handle.handle_text{3}  = text(z(1) + dq_t(1), z(2) + dq_t(2),...
+%             z(3) + dq_t(3), 'z');
+%         set(handle.handle_text{3}, 'Color', 'k');
         if(~old_ishold)
             hold off;
         end
